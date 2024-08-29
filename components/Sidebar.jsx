@@ -31,10 +31,10 @@ const Sidebar = ({ isOffcanvasOpen, setIsOffcanvasOpen, onSelectCollection, acti
                 fetchCollectionsRef.current = new AbortController(); // Create a new AbortController for each fetch
 
                 const urls = [
-                    'https://api-boas-praticas.onrender.com/api/pesticida-abelhas?populate=*',
-                    'https://api-boas-praticas.onrender.com/api/boa-pratica-agricolas',
-                    'https://api-boas-praticas.onrender.com/api/boa-pratica-apicolas?populate=*',
-                    'https://api-boas-praticas.onrender.com/api/boa-pratica-de-comunicacaos'
+                    'https://api-pragas.onrender.com/api/amostragem-de-pragas-da-sojas?populate=*',
+                    'https://api-pragas.onrender.com/api/amostragem-de-pragas-da-sojas?populate=*',
+                    'https://api-pragas.onrender.com/api/insetos-que-atacam-vagen-e-graos?populate=*',
+                    'https://api-pragas.onrender.com/api/pragas-de-raizes-e-nodulos?populate=*'
                 ];
 
                 const responses = await Promise.all(

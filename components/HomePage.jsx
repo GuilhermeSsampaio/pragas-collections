@@ -28,7 +28,7 @@ export const HomePage = () => {
         <>
             <Head>
                 <meta name="referrer" referrerPolicy="no-referrer" />
-                <title>Boas praticas</title>
+                <title>Pragas</title>
             </Head>
 
             {/* Código Navbar Offcanvas */}

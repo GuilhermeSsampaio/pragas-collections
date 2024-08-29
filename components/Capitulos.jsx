@@ -63,7 +63,7 @@ export const Capitulos = () => {
             setIsChapterLoading(true); // Inicia o carregamento do capítulo
             fetchCapitulosRef.current = new AbortController(); // Create a new AbortController for each fetch
     
-            const url = `https://api-pragas.onrender.com//api/${currentCollection}?populate=*`;
+            const url = `https://api-pragas.onrender.com/api/${currentCollection}?populate=*`;
     
             try {
                 const response = await fetch(url, { signal: fetchCapitulosRef.current.signal });
@@ -138,7 +138,7 @@ export const Capitulos = () => {
         <>
             <Head>
                 <meta name="referrer" content="no-referrer" />
-                <title>Boas Práticas</title>
+                <title>Pragas</title>
             </Head>
 
             <div className="container-wrapper">
