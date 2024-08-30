@@ -32,7 +32,7 @@ const Sidebar = ({ isOffcanvasOpen, setIsOffcanvasOpen, onSelectCollection, acti
 
                 const urls = [
                     'https://api-pragas.onrender.com/api/amostragem-de-pragas-da-sojas?populate=*',
-                    'https://api-pragas.onrender.com/api/amostragem-de-pragas-da-sojas?populate=*',
+                    'https://api-pragas.onrender.com/api/artropodes-que-ataca-folhas?populate=*',
                     'https://api-pragas.onrender.com/api/insetos-que-atacam-vagen-e-graos?populate=*',
                     'https://api-pragas.onrender.com/api/pragas-de-raizes-e-nodulos?populate=*'
                 ];
@@ -47,10 +47,10 @@ const Sidebar = ({ isOffcanvasOpen, setIsOffcanvasOpen, onSelectCollection, acti
                 );
 
                 const collectionsData = [
-                    { id: 1, title: 'Pesticidas e abelhas', data: responses[0] },
-                    { id: 2, title: 'Boas práticas agrícolas', data: responses[1] },
-                    { id: 3, title: 'Boas práticas apícolas', data: responses[2] },
-                    { id: 4, title: 'Boas práticas de comunicação', data: responses[3] }
+                    { id: 1, title: 'Amostragem de pragas', data: responses[0] },
+                    { id: 2, title: 'Atrópodes que atacam', data: responses[1] },
+                    { id: 3, title: 'insetos que atacam', data: responses[2] },
+                    { id: 4, title: 'pragas de raizes', data: responses[3] }
                 ];
 
                 setCollections(collectionsData);
